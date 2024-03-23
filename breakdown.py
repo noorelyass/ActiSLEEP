@@ -19,7 +19,7 @@ Each patient in knn_data has between 1 and 10 24-slot data entries. Entry specif
 
 Input the patient id and generate H*.
 
-How do we generate H*? Follow the steps in task summary!
+How do we generate H*?
 
 """
 def get_optimal_sequence(id: str):
@@ -50,9 +50,8 @@ def get_optimal_sequence(id: str):
         optimize(reduced) # recursive fcn
     
     # return S_0 as our H*
-    # return S_0
+    return S_0
 
 if __name__ == '__main__':
-    print("hello")
     # print(wasserstein_barycenter(get_patient_data('0105')))
     get_optimal_sequence('0105')
